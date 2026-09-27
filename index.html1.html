@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ayesha Ishaq - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #1a1a2e;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #4fd1c5;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid #4fd1c5;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    #hero {
+      background-color: #1a1a2e;
+      color: white;
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+
+    #hero p {
+      max-width: 600px;
+      margin: 0 auto 1.5rem auto;
+      font-size: 1.1rem;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #4fd1c5;
+      color: #1a1a2e;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #3aa89e;
+    }
+
+    #about p, #education p {
+      margin-bottom: 1rem;
+    }
+
+    .skill {
+      margin-bottom: 1.2rem;
+    }
+
+    .skill p {
+      margin-bottom: 0.3rem;
+      font-weight: bold;
+    }
+
+    .bar {
+      background-color: #ddd;
+      border-radius: 20px;
+      height: 15px;
+      overflow: hidden;
+    }
+
+    .fill {
+      background-color: #4fd1c5;
+      height: 100%;
+      border-radius: 20px;
+    }
+
+    .project-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .status {
+      background-color: #f0a868;
+      color: white;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 10px;
+      margin-left: 0.5rem;
+    }
+
+    .tech {
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    #contact a {
+      color: #1a1a2e;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #1a1a2e;
+      color: white;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="hero">
+    <h1>Ayesha Ishaq</h1>
+    <p>
+      I'm a Computer Science student at the University of Sargodha, building
+      toward database and cloud systems using HTML, CSS, JavaScript, PHP, and MySQL —
+      one project at a time.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects">View Projects</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Computer Science student at the University of Sargodha, currently building
+      a strong foundation in database systems, programming, and software design.
+    </p>
+    <p>
+      My coursework covers Database Systems, Python Object-Oriented Programming, Digital
+      Logic Design, and Calculus. I enjoy working through problems end to end — from
+      designing a database schema to writing the code that runs on top of it.
+    </p>
+    <p>
+      I am currently learning Microsoft Azure fundamentals, working toward the AZ-900
+      certification, as I build toward a career in cloud and database systems.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>
+      I'm currently pursuing a BS in Computer Science at the University of Sargodha
+      (2025–2029). Before that, I completed my ICS (Intermediate in Computer Science)
+      from ILM College, Sargodha (2023–2025), and my matriculation from Mission
+      Grammar High School, Sargodha, with 92% marks.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+      <p>HTML — 85%</p>
+      <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>CSS — 85%</p>
+      <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>JavaScript — 70%</p>
+      <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>Python — 75%</p>
+      <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>MySQL — 90%</p>
+      <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>PHP — 80%</p>
+      <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+    </div>
+
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Full-Stack Food Ordering System <span class="status">In Progress</span></h3>
+      <p>A complete food ordering web application with customer and admin sides — menu browsing, cart, order placement, and order management.</p>
+      <p class="tech">HTML • CSS • JavaScript • PHP • MySQL</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Online Food Ordering System</h3>
+      <p>A Database Systems project with schema design, 50 sample records, and SQL queries — built using MySQL, phpMyAdmin, and XAMPP.</p>
+      <p class="tech">MySQL • phpMyAdmin • XAMPP</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Food Delivery System (OOP)</h3>
+      <p>A Python application built using Abstract Base Classes, with composition and aggregation between order, customer, and delivery entities.</p>
+      <p class="tech">Python • OOP</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ayeshaishaq853@gmail.com">ayeshaishaq853@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/ayesha-ishaq26" target="_blank">github.com/ayesha-ishaq26</a></p>
+  </section>
+
+  <footer>
+    Built by Ayesha Ishaq
+  </footer>
+
+</body>
+</html>
